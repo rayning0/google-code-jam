@@ -1,0 +1,1 @@
+My solutions to Google Code Jam competition: https://code.google.com/codejam/contests.html
