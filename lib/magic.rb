@@ -50,13 +50,16 @@ class Magic
         result << "Volunteer cheated!"
       end
     end
+    print_file(result)
+    result
+  end
 
+  def print_file(result)
     File.open(filename[0..-5] + '_out.txt', 'a') do |f|
       result.each_with_index do |r, i|
-        puts "Case ##{i + 1}: #{r}"
         f.puts("Case ##{i + 1}: #{r}")
+        puts "Case ##{i + 1}: #{r}"
       end
     end
-    result
   end
 end
